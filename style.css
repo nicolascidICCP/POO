@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+
     
 }
 
@@ -70,7 +72,8 @@ body , html {
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: rgb(172, 0, 172);
+    color: #ffffff;
+    font-weight: bold;
 
 }
 
@@ -90,7 +93,7 @@ body , html {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(img/fondo\ 1.jpg);
+    background-image: url(img/header.jpg);
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -104,7 +107,8 @@ header {
 
 .header-content {
     margin-bottom: 150px;
-    color: #c900db;
+    font-weight: bold;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -145,6 +149,10 @@ header {
 
 /*informacion sobre programacion*/
 
+.image {
+
+}
+
 .explore {
     width: 100%;
     height: 60vh;
@@ -153,12 +161,13 @@ header {
 }
 
 .explore-content {
-    width: 60%;
+    width: 50%;
     padding: 50px;
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .explore-content h1 {
@@ -183,7 +192,7 @@ header {
 .lenguajes{
     width: 100%;
     height: 100vh;
-    background-image: url(img/fondo-forma-geometrica-degradado_122380-7.avif);
+    background-image: url(img/fondo\ lenguajes.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,12 +207,13 @@ section {
 .tittle {
     text-align: center;
     font-size: 4vmin;
-    color: aqua;
+    color: rgb(214, 255, 255);
 }
 
 .row {
     display: flex;
     align-items: center;
+    text-align: center;
     width:100%;
     justify-content: space-between;
 }
@@ -214,6 +224,7 @@ section {
     align-items: center;
     margin: 50px;
 }
+
 .lenguajes .row {
     margin-top: 80px;
 
@@ -227,6 +238,7 @@ h4 {
     font-size: 3vmin;
     color: #ffffff;
     margin: 20px auto;
+    justify-content: center;
 }
 
 p {
@@ -261,7 +273,6 @@ p {
 .content-col p {
     padding: 0;
     margin: 30px auto;
-    
 }
 
 .juego .image-gallery {
@@ -273,13 +284,32 @@ p {
 }
 
 .image-gallery img {
-    width: 250px;
+    width: 240px;
     margin: 15px;
     
 }
 
 .content-col .ctn {
+    margin-left: -100px;
     margin-top: 20px;
+}
+
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #000000;
+    text-align: center;
+}
+
+.footer p {
+    color: antiquewhite;
+    margin: 20px auto;
+    padding: 20px auto;
 }
 
 
@@ -303,7 +333,7 @@ p {
         width: 100%;
         height: 100vh;
         justify-content: center;
-        background: rgb(23, 59, 216);
+        background: rgb(0, 0, 0);
         margin-top: -900px;
         transition: all 0.4s ease;
     }
@@ -316,5 +346,59 @@ p {
 
     .nav-links li {
         margin: 30px auto;
+    }
+
+    /* lenguajes */
+
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .row .col p {
+        text-align: center;
+    }
+    .col img {
+        max-width: 30%;
+    }
+
+    /*informacion */
+
+    .explore-content {
+        width: 100%;
+        text-align: center;
+        
+
+    }
+
+    .explore .image {
+        width: 0%
+        
+    }
+    /*juego */
+
+    .juego .col {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 100%;
+
+
+    }
+    .content-col h3 {
+        text-align: center;
+    }
+
+    /*footer*/
+
+    .footer {
+        padding: 10px;
     }
 }
