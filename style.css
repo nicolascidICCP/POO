@@ -149,10 +149,6 @@ header {
 
 /*informacion sobre programacion*/
 
-.image {
-
-}
-
 .explore {
     width: 100%;
     height: 60vh;
@@ -389,7 +385,7 @@ p {
 
     .image-gallery img {
         width: 100%;
-
+        flex-direction: row;
 
     }
     .content-col h3 {
