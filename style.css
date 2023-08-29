@@ -347,6 +347,10 @@ p {
     /* lenguajes */
 
     .row {
+        justify-content: 40%;
+    }
+
+    .row {
         flex-direction: column;
     }
     .row .col {
@@ -356,7 +360,11 @@ p {
         text-align: center;
     }
     .col img {
-        max-width: 30%;
+        max-width: 15%;
+    }
+
+    .row .col .ctn {
+        margin-top: 1px;
     }
 
     /*informacion */
@@ -400,5 +408,23 @@ p {
 }
 
 
-/*animacio*7
+/*animacio*/
 
+img {
+    transition: transfore .3 ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background: #ffffff;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px black;
+}
+
+li:hover {
+    color: #fc036b;
+    cursor: ;
+}
