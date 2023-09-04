@@ -276,7 +276,7 @@ p {
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #d3d3d3;
 }
 
 .image-gallery img {
